@@ -832,8 +832,8 @@ ul {
 .product-box {
   width: 100%;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 10px rgba(233, 68, 70, 0.02);
-          box-shadow: 0px 0px 10px rgba(233, 68, 70, 0.02);
+  -webkit-box-shadow: 0px 0px 10px rgba(233, 68, 70, 0.2);
+          box-shadow: 0px 0px 10px rgba(233, 68, 70, 0.2);
   overflow: hidden;
   background-color: #fff;
   -webkit-transition: all .3s linear;

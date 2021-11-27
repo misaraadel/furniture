@@ -120,6 +120,38 @@ $(document).ready(function () {
         }
     });
 
+    
+    $('.owl-single-product').owlCarousel({
+        rtl: true,
+        loop:false,
+        margin: 20,
+        nav:false,
+        dots: true,
+        autoplay: true,
+        touchDrag  : true,
+		mouseDrag  : true,
+		autoWidth: false,
+		animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        autoplayTimeout: 6000,
+		smartSpeed: 2000,
+		dragEndSpeed: 2000,
+		slidSpeed: 900,
+        paginationSpeed: 900,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+
     $('.add-cart').on('click', function () {
         var cart = $('.cart-list');
         var imgtodrag = $(this).closest('.product-box').find("img").first();
@@ -161,5 +193,27 @@ $(document).ready(function () {
             });
         }
     });  
+
+    const selected = document.querySelector(".selected");
+
+    const optionContainer = document.querySelector(".option-container");
+
+    const optionsList = document.querySelectorAll(".option");
+
+    selected.addEventListener("click" , () => {
+        selected.classList.toggle("active");
+        optionContainer.classList.toggle("active");
+        
+    });
+
+    optionsList.forEach( innerData => {
+        innerData.addEventListener("click" , () => {
+            selected.innerHTML = innerData.querySelector("label").innerHTML;
+
+            optionContainer.classList.remove("active");
+
+            selected.classList.remove("active");
+        })
+    })
 });
 

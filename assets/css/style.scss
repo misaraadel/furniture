@@ -377,4 +377,250 @@ header{
     }
     
 }
+
+.user-data{
+    width: 100%;
+    padding: 120px 0px 40px 0px;
+    background-color: #fff;
+
+    .user-content{
+        width: 100%;
+        padding: 40px 40px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba($color: #E94446 , $alpha: .2);
+        border-radius: 20px;
+
+        .form-content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            .brand-name{
+                .brand-img{
+                    width: 120px;
+                    height: 80px;
+                    object-fit: contain;
+                    object-position: center;
+                    margin-bottom: 30px;
+                }
+            }
+
+        }
+        
+        .rest-password{
+            width: 100%;
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #808080;
+        }
+
+        .heading{
+            margin-bottom: 30px !important;
+        }
+
+        .register-now{
+            width: 100%;
+            text-align: right;
+            margin-top: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #808080;
+            
+            span{
+                color: #E94446;
+                margin-right: 10px !important;
+            }
+        }
+    }
+}
+
+.profile{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #fff;
+
+    .profile-nav{
+        width: 100%;
+        padding: 30px 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: .02);
+
+        .nav{
+            width: 100%;
+            border: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .nav-item{
+                width: 100%;
+                margin-bottom: 13px;
+
+                &:last-child{
+                    margin: 0px !important;
+                }
+
+                .nav-link{
+                    width: 100%;
+                    padding: 10px 20px;
+                    border-radius: 40px;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: flex-start;
+                    border: 1px solid transparent;
+
+                    .nav-icon{
+                        width: 20px;
+                        height: 20px;
+                        object-fit: contain;
+                        margin-left: 10px;
+                        filter: invert(51%) sepia(6%) saturate(0%) hue-rotate(307deg) brightness(89%) contrast(89%);
+                    }
+
+                    span{
+                        color: #777;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    &.active , &:hover{
+                        background-color: transparent !important;
+                        border-color: #ddd;
+
+                        .nav-icon{
+                            animation: pulse .4s linear;
+                            filter: invert(35%) sepia(57%) saturate(2738%) hue-rotate(332deg) brightness(91%) contrast(102%);
+                        }
+
+                        span{
+                            color: #E94446
+                        }
+                    }
+                }
+            }
+        }   
+    }
+
+    .profile-data{
+        width: 100%;
+
+        .profile-box{
+            width: 100%;
+            padding: 20px 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+
+            .title{
+                display: flex;
+                align-items: center;
+                align-content: center;
+                width: 100%;
+                margin-bottom: 20px;
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                    filter: invert(51%) sepia(6%) saturate(0%) hue-rotate(307deg) brightness(89%) contrast(89%);
+                    margin-left: 10px;
+                }
+
+                span{
+                    color: #808080;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+
+            p{
+                color: #121212;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 2.5rem;
+            }
+
+            h4{
+                color: #000000;
+                font-size: 20px;
+                font-weight: 800;
+                margin: 0px !important;
+                padding: 0px 30px 0px 0px;
+            }
+        }
+
+        .edit-data{
+            width: 100%;
+            padding: 20px 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-color: #fff;
+            outline: none;
+
+            img{
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+                filter: invert(51%) sepia(6%) saturate(0%) hue-rotate(307deg) brightness(89%) contrast(89%);
+                margin-left: 10px;
+            }
+
+            span{
+                color: #808080;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+        .table{
+            th{
+                color: #121212;
+                font-size: 16px;
+                font-weight: 700;
+                vertical-align: middle;
+            }
+
+            td{
+                color: #808080;
+                font-size: 15px;
+                font-weight: 500;
+                vertical-align: middle;
+
+                .order-type{
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    min-width: 150px !important;
+
+                    &.yellow{
+                        background-color: #f7b926;
+                        color: #808080;
+                    }
+
+                    &.red{
+                        background-color: #E94446;
+                        color: #000;
+                    }
+
+                    &.green{
+                        background-color: #3dba69;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
 @import 'media';

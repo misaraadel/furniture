@@ -101,4 +101,20 @@
             width: 140px !important;
         }
     }
+
+    .modal{
+        .porfile-modal{
+            max-width: 100%;
+        }
+    }
+
+    .profile-data{
+        .table{
+            th , td , .order-type{
+                min-width: 200px !important;
+
+            }
+        }
+    }
+
 }

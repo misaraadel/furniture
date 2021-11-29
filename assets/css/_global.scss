@@ -1146,9 +1146,53 @@ footer{
             }
         }
     }
+
+    .form-group{
+        width: 100% !important;
+
+        .label-data{
+            color: #000;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .from-control{
+            width: 100%;
+            height: 50px;
+            background-color: #fff;
+            border: 1px solid #888;
+            border-radius: 30px;
+            padding: 0px 20px;
+
+            &::placeholder{
+                color: #808080;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            &:focus,
+            &:hover{
+                border-color: #E94446;
+                background-color: #f6f6f6;
+            } 
+        }
+    }
+
+    .submit-btn{
+        width: 100% !important;
+    }
 }
 
 .modal{
+    position: fixed;
+    z-index: 999999 !important;
+    background-color: rgba($color: #000000, $alpha: .4);
+
+    .porfile-modal{
+        max-width: 70%;
+    }
+
     .modal-body{
         width: 100%;
         display: flex;

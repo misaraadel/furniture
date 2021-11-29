@@ -194,26 +194,6 @@ $(document).ready(function () {
         }
     });  
 
-    const selected = document.querySelector(".selected");
-
-    const optionContainer = document.querySelector(".option-container");
-
-    const optionsList = document.querySelectorAll(".option");
-
-    selected.addEventListener("click" , () => {
-        selected.classList.toggle("active");
-        optionContainer.classList.toggle("active");
-        
-    });
-
-    optionsList.forEach( innerData => {
-        innerData.addEventListener("click" , () => {
-            selected.innerHTML = innerData.querySelector("label").innerHTML;
-
-            optionContainer.classList.remove("active");
-
-            selected.classList.remove("active");
-        })
-    })
+   
 });
 

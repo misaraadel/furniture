@@ -43,7 +43,7 @@ $(document).ready(function () {
         margin: 20,
         nav:false,
         dots: true,
-        // autoplay: true,
+        autoplay: true,
         touchDrag  :false,
 		mouseDrag  : false,
 		autoWidth: false,

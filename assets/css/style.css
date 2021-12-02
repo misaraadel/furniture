@@ -3005,5 +3005,8 @@ header .owl-item.active .image-content {
   .profile-data .table th, .profile-data .table td, .profile-data .table .order-type {
     min-width: 200px !important;
   }
+  header .item-background {
+    background-position: right !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
